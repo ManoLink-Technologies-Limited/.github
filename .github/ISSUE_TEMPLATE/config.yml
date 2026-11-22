@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Report a security vulnerability
+    url: https://github.com/ManoLink-Technologies-Limited/.github/blob/main/SECURITY.md
+    about: Report privately to hello@wakabots.com — never in a public issue.
+  - name: Licensing, partnership and pilot enquiries
+    url: https://github.com/ManoLink-Technologies-Limited
+    about: Our product repositories are private and proprietary. Email hello@wakabots.com.

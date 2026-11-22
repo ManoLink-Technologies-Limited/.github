@@ -1,0 +1,68 @@
+name: Bug report
+description: Report a reproducible problem in a public ManoLink repository or website.
+title: "[Bug]: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report this.
+
+        **Do not use this form for security issues.** Report those privately as
+        described in [SECURITY.md](https://github.com/ManoLink-Technologies-Limited/.github/blob/main/SECURITY.md).
+
+        Never include passwords, API keys, tokens, customer data or personal data.
+  - type: input
+    id: where
+    attributes:
+      label: Where did it happen?
+      description: The repository, page or endpoint, plus the commit, version or date.
+      placeholder: e.g. wakabots.com booking form, 2026-11-22
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect to happen?
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: What happened instead?
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Go to …
+        2. Click …
+        3. See …
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs, screenshots or error messages
+      description: Redact anything sensitive before pasting.
+      render: shell
+    validations:
+      required: false
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: Optional — device, operating system and browser or app version.
+      placeholder: e.g. iPhone 15, iOS 18.2, Safari
+    validations:
+      required: false
+  - type: checkboxes
+    id: confirmations
+    attributes:
+      label: Before you submit
+      options:
+        - label: I have removed secrets, credentials and personal data from this report.
+          required: true
+        - label: I understand our repositories are proprietary and that this report creates no obligation on ManoLink Technologies Limited.
+          required: true

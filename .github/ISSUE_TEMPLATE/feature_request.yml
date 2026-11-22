@@ -1,0 +1,45 @@
+name: Feature request
+description: Suggest an improvement to a public ManoLink repository, product or website.
+title: "[Feature]: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Our product roadmap is internal, so a request accepted here is not a
+        commitment to build it. This issue is public — please do not post
+        confidential information.
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem are you trying to solve?
+      description: Describe the situation, not only the solution you have in mind.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: What would you like to happen?
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives you have considered
+    validations:
+      required: false
+  - type: input
+    id: audience
+    attributes:
+      label: Who would this help?
+      placeholder: e.g. merchants in Freetown, travellers booking flights
+    validations:
+      required: false
+  - type: checkboxes
+    id: confirmations
+    attributes:
+      label: Before you submit
+      options:
+        - label: This request contains no secrets, credentials, customer data or confidential information.
+          required: true
+        - label: I understand our product repositories are proprietary and that this request creates no obligation on ManoLink Technologies Limited.
+          required: true
